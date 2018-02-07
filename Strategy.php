@@ -45,8 +45,6 @@ class Strategy
         $slowEma = getEma($marketPriceHistory, $this->config->slowEma);
         $emaPctDiff = abs($fastEma - $slowEma) * 100 / max($fastEma, $slowEma);
 
-        return;
-
         $buySignal = $fastEma > $slowEma && $emaPctDiff > 1;
         $sellSignal = $fastEma < $slowEma && $emaPctDiff > 1;
 
