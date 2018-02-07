@@ -1,0 +1,7 @@
+{
+    "seriesLimit": 30,
+    "fastEma": 10,
+    "slowEma": 30,
+    "apiKey": "",
+    "apiSecret": ""
+}
